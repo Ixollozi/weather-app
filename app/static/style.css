@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    min-height: 100vh;
+    color: #2d3436;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+header h1 {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.temperature {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #0984e3;
+    margin: 1rem 0;
+}
+
+.weather-description {
+    font-size: 1.2rem;
+    color: #636e72;
+    margin-bottom: 1rem;
+}
+
+.weather-details {
+    background: rgba(116, 185, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#city-input {
+    border-radius: 25px;
+    padding: 12px 20px;
+    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+#city-input:focus {
+    border-color: #74b9ff;
+    box-shadow: 0 0 10px rgba(116, 185, 255, 0.3);
+    background: white;
+}
+
+.btn-primary {
+    background: #0984e3;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+}
+
+.btn-primary:hover {
+    background: #74b9ff;
+    transform: translateY(-2px);
+}
+
+#autocomplete-list {
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 5px;
+}
+
+.list-group-item-action:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.history-item:hover {
+    background-color: #e3f2fd;
+}
+
+h3 {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.list-group {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.spinner-border {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .temperature {
+        font-size: 3rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
